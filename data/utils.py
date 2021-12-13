@@ -170,3 +170,19 @@ def coco91_to_coco80_class():  # converts 80-index (val2014) to 91-index (paper)
          51, 52, 53, 54, 55, 56, 57, 58, 59, None, 60, None, None, 61, None, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72,
          None, 73, 74, 75, 76, 77, 78, 79, None]
     return x
+
+
+def coco_custom_20_classes():
+    custom_20_coco_ids = {
+        1: 'person', 2: 'bicycle', 3: 'car', 4: 'motorcycle', 5: 'airplane',
+        6: 'bus', 7: 'train', 9: 'boat', 16: 'bird', 17: 'cat',
+        18: 'dog', 19: 'horse', 20: 'sheep', 21: 'cow', 44: 'bottle',
+        62: 'chair', 63: 'couch', 64: 'potted plant', 67: 'dining table', 72: 'tv'
+    }
+    custom_20_custom_ids = {
+        1: 'person', 2: 'bicycle', 3: 'car', 4: 'motorcycle', 5: 'airplane',
+        6: 'bus', 7: 'train', 8: 'boat', 9: 'bird', 10: 'cat',
+        11: 'dog', 12: 'horse', 13: 'sheep', 14: 'cow', 15: 'bottle',
+        16: 'chair', 17: 'couch', 18: 'potted plant', 19: 'dining table', 20: 'tv'
+    }
+    return custom_20_coco_ids, custom_20_custom_ids
